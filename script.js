@@ -1,7 +1,12 @@
-document.querySelector(".contact-form").addEventListener("submit", e => {
-  e.preventDefault();
-  alert("Thank you! We will contact you soon.");
+// Mobile Menu Toggle
+const menuToggle = document.getElementById("menuToggle");
+const navMenu = document.getElementById("navMenu");
+
+menuToggle.addEventListener("click", () => {
+  navMenu.classList.toggle("show");
 });
+
+// Contact Form (mailto)
 document.getElementById("contactForm").addEventListener("submit", function(e) {
   e.preventDefault();
 
@@ -18,7 +23,7 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
     "Message:%0D%0A" + message;
 
   window.location.href =
-    "mailto:skymech.kop@gmail.com, thoratsuja315@gmail.com" +
+    "mailto:skymech.kop@gmail.com,anotheremail@gmail.com" +
     "?subject=" + subject +
     "&body=" + body;
 });

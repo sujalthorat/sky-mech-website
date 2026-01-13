@@ -23,7 +23,7 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
     "Message:%0D%0A" + message;
 
   window.location.href =
-    "mailto:skymech.kop@gmail.com,anotheremail@gmail.com" +
+    "mailto:skymech.kop@gmail.com," +
     "?subject=" + subject +
     "&body=" + body;
 });
